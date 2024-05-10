@@ -1,0 +1,222 @@
+.side-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  inset-inline-start: -100%;
+  text-align: center;
+  z-index: 9999;
+  padding: .5rem;
+  background-color: var(--bg-color);
+  transition: all 0.3s ease-in;
+  .navbar-brand {
+    margin-bottom: 1rem;
+    display: block;
+    .logo-small {
+      display: none;
+    }
+  }
+  .logo-action {
+    position: relative;
+    .icon-close {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      inset-inline-end: 1rem;
+      font-size: 1.5rem;
+      color: rgba($danger-color, 30%);
+    }
+  }
+  .navbar-item-list {
+    .transport-services {
+      text-align: start;
+      background-color: #F2F8FB;
+      border: 1px solid #E2ECF1;
+      border-radius: .5rem;
+      padding: 1rem;
+      position: relative;
+      transition: all .5s  ease-in-out;
+      .header {
+        display: flex;
+        text-align: start;
+        align-items: center;
+        gap: 1rem;
+        .icon-moon {
+          background-color: var(--active-color);
+          color: var(--white-color);
+          border-radius: .25rem;
+          padding: .375rem;
+          &::before {
+            color: var(--white-color);
+          }
+        }
+        .icon-extends {
+          margin-inline-start: auto;
+        }
+      }
+      .body {
+        transition: all .3s  ease-in-out;
+        transform: scaleY(0);
+        transform-origin: top center;
+        position: absolute;
+        border-top: 1px solid #E2ECF1;
+        a {
+          display: block;
+          padding-top: 1rem;
+          &:hover {
+            color: var(--active-color);
+            text-decoration:dashed;
+          }
+        }
+
+      }
+      &.show-services {
+
+        .body {
+          position: relative;
+          transform: scaleY(1);
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      gap: 1rem;
+      list-style-type: none;
+      li {
+        text-align: start;
+        a {
+          padding: .5rem 1rem;
+          border-radius: .25rem;
+          display: flex;
+          align-items: center;
+          gap: .5rem;
+          font-size: .75rem;
+          font-weight: 500;
+          color: var(--gray-color);
+          span.icon-moon {
+            font-size: 1.25rem;
+            &::before {
+              color: var(--gray-color);
+            }
+          }
+          &.active {
+            background-color: var(--active-color);
+            color: var(--white-color);
+            border-radius: 1rem;
+            span.icon-moon {
+              &:before {
+                color: var(--white-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.show-side-bar {
+  .side-bar {
+    inset-inline-start: 0;
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .side-bar  {
+    width: 5rem;
+    inset-inline-start: 0;
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      .logo-large {
+        display: none;
+      }
+      .logo-small {
+        display: block;
+      }
+    }
+    .logo-action {
+      position: relative;
+      .icon-close {
+        display: none;
+      }
+    }
+    .navbar-item-list {
+      .transport-services {
+        display: none;
+      }
+      ul {
+        margin-top: 1rem;
+        li {
+          a {
+            gap: 0;
+            justify-content: center;
+            span.icon-moon {
+              font-size: 1.5rem;
+            }
+            span.text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 991.98px) {
+  .side-bar {
+    width: 16rem;
+    inset-inline-start: 0;
+    text-align: center;
+    .navbar-brand {
+      padding: 1rem;
+      display: block;
+      margin-bottom: 0;
+      .logo-small {
+        display: none;
+      }
+    }
+    .logo-action {
+      position: relative;
+      .icon-close {
+        display: none;
+      }
+    }
+    .navbar-item-list {
+      .transport-services{
+
+      }
+      ul {
+        margin: 0;
+        padding: .5rem;
+        gap: 1rem;
+        li {
+          text-align: start;
+          a {
+            padding: .5rem 1rem;
+            border-radius: .25rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .75rem;
+            font-weight: 500;
+            span.icon-moon {
+              font-size: 1.25rem;
+            }
+            &.active {
+              background-color: #0075C9;
+              color: var(--white-color);
+              border-radius: 1rem;
+              span.icon-moon {
+                &:before {
+                  color: var(--white-color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

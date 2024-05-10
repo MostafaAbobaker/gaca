@@ -1,0 +1,29 @@
+.wrapper-page {
+  background-color: $bg-color;
+  min-height: 100svh;
+  width: 100%;
+  padding: 1rem;
+  .page-content  {
+    background-color: var(--white-color);
+    box-shadow: 0 4px 20px hsla(201, 19%, 79%, 0.2);
+    min-height: 80svh;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    gap: 2rem;
+  }
+  &.show-side-bar {
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .wrapper-page  {
+    padding-inline-start:  6rem;
+  }
+}
+@media (min-width: 991.98px) {
+  .wrapper-page  {
+    padding-inline-start:  17rem;
+
+  }
+}

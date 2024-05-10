@@ -1,0 +1,42 @@
+<aside class="side-bar">
+  <div class="logo-action">
+    <a href="" class="navbar-brand">
+      <img src="./assets/imgs/logo.svg" alt="logo" class="logo-large">
+      <img src="./assets/imgs/logo-small.png" alt="logo" class="logo-small ">
+    </a>
+    <a class="icon-close   "><i class="fa-solid fa-xmark"></i></a>
+  </div>
+  <div class="navbar-item-list">
+    <div class="transport-services" [class.show-services]="showServices">
+      <div class="header">
+
+        <span class="icon-moon icon-plane"></span>
+        <h6>خدمات النقل الجوي والتعاون الدولي</h6>
+        <a class="icon-extends" (click)="showServices =! showServices"><i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+      <div class="body" >
+        <a href="https://gaca.gov.sa/web/ar-sa/page/home" target="_blank">خدمات النقل الجوي والتعاون الدولي</a>
+      </div>
+    </div>
+    <ul class="">
+      <li><a routerLink="dashboard" routerLinkActive="active">
+         <span class="icon-moon icon-Dashboard"></span> <span class="text">لوحة
+          التحكم</span></a></li>
+      <li><a routerLink="requests" routerLinkActive="active">
+         <span class="icon-moon icon-order"></span> <span class="text">طلباتي</span></a></li>
+      <li><a routerLink="catalog" routerLinkActive="active">
+         <span class="icon-moon icon-Cataloge"></span> <span class="text">كتالوج
+          الخدمة</span></a></li>
+      <hr />
+      <li><a routerLink="generalAviation" routerLinkActive="active">
+         <span class="icon-moon icon-plane"></span> <span class="text">الطيران
+          العام</span></a></li>
+      <li><a routerLink="commercialAviation" routerLinkActive="active">
+         <span class="icon-moon icon-plane"></span>
+          <span class="text">الطيران التجاري</span></a></li>
+      <li><a routerLink="diplomaticAviation" routerLinkActive="active">
+         <span class="icon-moon icon-plane"></span>
+          <span class="text">الطيران الدبلوماسي/العسكري</span></a></li>
+    </ul>
+  </div>
+</aside>

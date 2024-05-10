@@ -1,0 +1,29 @@
+
+// AR Font
+
+@font-face {
+  font-family: 'Greta Arabic AR + LT';
+  src: url('../../fonts/ArbFONTS-GretaTextArabicLight.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Greta Arabic AR + LT';
+  src: url('../../fonts/ArbFONTS-Greta-Arabic-Medium.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Greta Arabic AR + LT';
+  src: url('../../fonts/ArbFONTS-Greta-Arabic-Bold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root{
+  --font-family: 'Greta Arabic AR + LT', sans-serif;
+  --font-weight: 400;
+}
+
+
+

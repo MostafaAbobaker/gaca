@@ -1,17 +1,10 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-3">
-      <h1 class="display-1 "> Hello World !</h1>
-    </div>
-    <div class="col-lg-3">
-      <h1 class="display-1 "> Hello World !</h1>
-    </div>
-    <div class="col-lg-3">
-      <p-calendar [(ngModel)]="date"></p-calendar>
+<main class="wrapper-page" [class.show-side-bar]="showSideBar">
+  <app-navbar></app-navbar>
+  <app-side-bar></app-side-bar>
+  <div class="page-content">
 
-    </div>
-    <div class="col-lg-3">
-      <h1 class="display-1 "> <button class="btn btn-danger "><i class="fa-solid fa-door-open me-2"></i>Click</button></h1>
-    </div>
+    <router-outlet></router-outlet>
   </div>
-</div>
+
+
+</main>

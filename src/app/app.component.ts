@@ -7,7 +7,6 @@ import { ButtonModule } from 'primeng/button';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'gaca';
-  date: Date | undefined;
+  showSideBar:boolean= false;
 
 }

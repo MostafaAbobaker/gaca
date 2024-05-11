@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-side-bar',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-bar.component.scss']
 })
 export class SideBarComponent {
-  showServices:boolean= false
+  showServices:boolean= false;
+
+  @Input() showSideBar!: boolean;
+
+  @Output() ToggleSideBar: EventEmitter<boolean> = new EventEmitter();
+
+  toggleSideBar() {
+    this.showSideBar = !this.showSideBar;
+    this.ToggleSideBar.emit(this.showSideBar);
+  }
 }

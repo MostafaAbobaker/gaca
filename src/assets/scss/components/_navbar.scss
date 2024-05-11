@@ -1,0 +1,210 @@
+nav.navbar {
+  background-color: var(--bg-color);
+  .log-action {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .logo-navbar {
+      display: block;
+    }
+  }
+  .navbar-nav {
+    align-items: center;
+    flex-direction: row;
+    display: none;
+    .notifications {
+      padding-inline: 1.5rem;
+      .text {
+        display: none;
+        font-weight: 500;
+      }
+      .icon {
+        position: relative;
+        margin-inline-start: .5rem;
+        .badge {
+          position: absolute;
+          top: -10px;
+          inset-inline-end: -15px;
+        }
+      }
+      &.dropdown-toggle {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .nav-item {
+      position: relative;
+      .user  {
+        display: flex;
+        align-items: center;
+        min-width: auto;
+        border-radius: .5rem;
+        border: 1px solid #DDE8ED ;
+        gap: .5rem;
+        padding:  .5rem  1rem ;
+        .image {
+          img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: .25rem;
+          }
+        }
+        .user-body {
+          display: none;
+          h5.title {
+            margin-bottom: 0;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
+        &.dropdown-toggle {
+          &::after {
+            content: "\f142";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            border: none;
+            margin-left: unset;
+            margin-inline-start: .255em;
+          }
+        }
+      }
+      .dropdown-menu {
+        position: absolute;
+      }
+    }
+  }
+}
+.show-side-bar {
+  nav.navbar {
+    .icon-toggle {
+      .fa-arrow-right:before {
+        content: "\f060";
+      }
+    }
+
+  }
+}
+@media (max-width:  576px) {
+    nav.navbar {
+      .icon-toggle {
+        .fa-arrow-right:before {
+          content: "\f039";
+        }
+      }
+
+    }
+
+}
+@media (min-width:  576px) and (max-width: 991.98px) {
+  nav.navbar {
+    .icon-toggle {
+      .fa-arrow-right:before {
+        content: "\f060";
+      }
+    }
+    .log-action {
+
+      .logo-navbar {
+        display: none;
+      }
+    }
+    .navbar-nav {
+      display: flex;
+      .notifications {
+        .text {
+          display: none;
+        }
+      }
+      .nav-item {
+
+        .user  {
+          min-width: auto;
+          .image {
+            img {
+
+            }
+          }
+          .user-body {
+            display: block;
+            h5.title {
+              width: 6rem;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            p {
+              width: 6rem;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+        }
+      }
+    }
+  }
+  .show-side-bar {
+    nav.navbar {
+      .icon-toggle {
+        .fa-arrow-right:before {
+          content: "\f061";
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 991.98px) {
+  nav.navbar {
+    background-color: var(--bg-color);
+    .log-action {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .logo-navbar {
+        display: none;
+      }
+    }
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      .notifications {
+        .text {
+          display: inline-block;
+        }
+      }
+      .nav-item {
+        .user  {
+          display: flex;
+          align-items: center;
+          min-width: 18rem;
+          border-radius: .5rem;
+          border: 1px solid #DDE8ED ;
+          gap: .5rem;
+          padding:  .5rem  1rem ;
+          .image {
+            img {
+              width: 2rem;
+              height: 2rem;
+              border-radius: .25rem;
+            }
+          }
+          .user-body {
+            display: block;
+            h5.title {
+              margin-bottom: 0;
+            }
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

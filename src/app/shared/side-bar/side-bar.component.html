@@ -4,7 +4,7 @@
       <img src="./assets/imgs/logo.svg" alt="logo" class="logo-large">
       <img src="./assets/imgs/logo-small.png" alt="logo" class="logo-small ">
     </a>
-    <a class="icon-close   "><i class="fa-solid fa-xmark"></i></a>
+    <a class="icon-close" (click)="toggleSideBar()"><i class="fa-solid fa-xmark"></i></a>
   </div>
   <div class="navbar-item-list">
     <div class="transport-services" [class.show-services]="showServices">
@@ -37,6 +37,33 @@
       <li><a routerLink="diplomaticAviation" routerLinkActive="active">
          <span class="icon-moon icon-plane"></span>
           <span class="text">الطيران الدبلوماسي/العسكري</span></a></li>
+    </ul>
+  </div>
+  <div class="list-view-mobile">
+    <ul>
+      <li> <a class="nav-link  notifications" >
+        <span class="icon ">
+          <i class="fa-regular fa-bell "></i>
+
+        </span>
+        <span class="text">التنبيهات</span>
+
+<span class="badge rounded-pill bg-danger">
+  3
+</span>
+      </a></li>
+      <li><a class="user " >
+        <div class="image">
+          <img src="./assets/imgs/user.jpeg" alt="user">
+        </div>
+        <div class="user-body">
+          <h5 class="title">محمد عبدالكريم</h5>
+          <p class="email">abdulkareem@gaca.com</p>
+        </div>
+      </a></li>
+      <li>
+        <a ><span class="icon"><i class="fa-solid fa-arrow-right-from-bracket "></i></span> <span class="text">خروج</span> </a>
+      </li>
     </ul>
   </div>
 </aside>

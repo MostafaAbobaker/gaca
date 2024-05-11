@@ -1,6 +1,6 @@
 <main class="wrapper-page" [class.show-side-bar]="showSideBar">
-  <app-navbar></app-navbar>
-  <app-side-bar></app-side-bar>
+  <app-side-bar [showSideBar]="showSideBar" (ToggleSideBar)="ToggleSideBar($event)"></app-side-bar>
+  <app-navbar [showSideBar]="showSideBar"  (ToggleSideBar)="ToggleSideBar($event)"></app-navbar>
   <div class="page-content">
 
     <router-outlet></router-outlet>

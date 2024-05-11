@@ -1,0 +1,81 @@
+// Bootstrap  v5.3.2 Multi Direction
+
+// Margin
+
+.ms-auto{ margin-left: unset !important; margin-inline-start: auto  !important;}
+.me-auto{ margin-right: unset !important; margin-inline-end: auto   !important;}
+
+.ms-0{ margin-left: unset !important; margin-inline-start: 0        !important;}
+.ms-1{ margin-left: unset !important; margin-inline-start: .25rem   !important;}
+.ms-2{ margin-left: unset !important; margin-inline-start: .5rem    !important;}
+.ms-3{ margin-left: unset !important; margin-inline-start: 1rem     !important;}
+.ms-4{ margin-left: unset !important; margin-inline-start: 1.5rem   !important;}
+.ms-5{ margin-left: unset !important; margin-inline-start: 3rem     !important;}
+
+.me-0{ margin-right: unset !important; margin-inline-end: 0        !important;}
+.me-1{ margin-right: unset !important; margin-inline-end: .25rem   !important;}
+.me-2{ margin-right: unset !important; margin-inline-end: .5rem    !important;}
+.me-3{ margin-right: unset !important; margin-inline-end: 1rem     !important;}
+.me-4{ margin-right: unset !important; margin-inline-end: 1.5rem   !important;}
+.me-5{ margin-right: unset !important; margin-inline-end: 3rem     !important;}
+
+// Padding
+
+.ps-0{ padding-left: unset !important; padding-inline-start: 0        !important;}
+.ps-1{ padding-left: unset !important; padding-inline-start: .25rem   !important;}
+.ps-2{ padding-left: unset !important; padding-inline-start: .5rem    !important;}
+.ps-3{ padding-left: unset !important; padding-inline-start: 1rem     !important;}
+.ps-4{ padding-left: unset !important; padding-inline-start: 1.5rem   !important;}
+.ps-5{ padding-left: unset !important; padding-inline-start: 3rem     !important;}
+
+.pe-0{ padding-right: unset !important; padding-inline-end: 0        !important;}
+.pe-1{ padding-right: unset !important; padding-inline-end: .25rem   !important;}
+.pe-2{ padding-right: unset !important; padding-inline-end: .5rem    !important;}
+.pe-3{ padding-right: unset !important; padding-inline-end: 1rem     !important;}
+.pe-4{ padding-right: unset !important; padding-inline-end: 1.5rem   !important;}
+.pe-5{ padding-right: unset !important; padding-inline-end: 3rem     !important;}
+
+// Text Align
+
+.text-end{ text-align: unset !important; text-align: end !important;}
+.text-start{ text-align: unset !important; text-align: start !important;}
+
+
+@media (min-width: 1400px)  {
+    // Text Align
+    .text-xxl-end{text-align: unset !important; text-align: end !important;}
+    .text-xxl-start{text-align: unset !important; text-align: start !important;}
+
+    // Margin
+    .ms-xxl-auto{ margin-left: unset !important; margin-inline-start: auto !important;}
+    .me-xxl-auto{ margin-right: unset !important; margin-inline-end: auto !important;}
+
+    .ms-xxl-0{ margin-left: unset !important; margin-inline-start: 0        !important;}
+    .ms-xxl-1{ margin-left: unset !important; margin-inline-start: .25rem   !important;}
+    .ms-xxl-2{ margin-left: unset !important; margin-inline-start: .5rem    !important;}
+    .ms-xxl-3{ margin-left: unset !important; margin-inline-start: 1rem     !important;}
+    .ms-xxl-4{ margin-left: unset !important; margin-inline-start: 1.5rem   !important;}
+    .ms-xxl-5{ margin-left: unset !important; margin-inline-start: 3rem     !important;}
+
+    .me-xxl-0{ margin-right: unset !important; margin-inline-end: 0        !important;}
+    .me-xxl-1{ margin-right: unset !important; margin-inline-end: .25rem   !important;}
+    .me-xxl-2{ margin-right: unset !important; margin-inline-end: .5rem    !important;}
+    .me-xxl-3{ margin-right: unset !important; margin-inline-end: 1rem     !important;}
+    .me-xxl-4{ margin-right: unset !important; margin-inline-end: 1.5rem   !important;}
+    .me-xxl-5{ margin-right: unset !important; margin-inline-end: 3rem     !important;}
+
+    // Padding
+    .ps-xxl-0{ padding-left: unset !important; padding-inline-start: 0        !important;}
+    .ps-xxl-1{ padding-left: unset !important; padding-inline-start: .25rem   !important;}
+    .ps-xxl-2{ padding-left: unset !important; padding-inline-start: .5rem    !important;}
+    .ps-xxl-3{ padding-left: unset !important; padding-inline-start: 1rem     !important;}
+    .ps-xxl-4{ padding-left: unset !important; padding-inline-start: 1.5rem   !important;}
+    .ps-xxl-5{ padding-left: unset !important; padding-inline-start: 3rem     !important;}
+
+    .pe-xxl-0{ padding-right: unset !important; padding-inline-end: 0        !important;}
+    .pe-xxl-1{ padding-right: unset !important; padding-inline-end: .25rem   !important;}
+    .pe-xxl-2{ padding-right: unset !important; padding-inline-end: .5rem    !important;}
+    .pe-xxl-3{ padding-right: unset !important; padding-inline-end: 1rem     !important;}
+    .pe-xxl-4{ padding-right: unset !important; padding-inline-end: 1.5rem   !important;}
+    .pe-xxl-5{ padding-right: unset !important; padding-inline-end: 3rem     !important;}
+}

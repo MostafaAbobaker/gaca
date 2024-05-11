@@ -9,4 +9,10 @@ import { ButtonModule } from 'primeng/button';
 export class AppComponent {
   showSideBar:boolean= false;
 
+
+  ToggleSideBar(event:any){
+    this.showSideBar = event;
+    console.log(this.showSideBar);
+
+  }
 }

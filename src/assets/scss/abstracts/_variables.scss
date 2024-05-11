@@ -6,6 +6,7 @@ $white-color: #fff;
 $gray-color: #7C7C7C;
 $danger-color: #EE3749;
 $success-color: #00A886;
+$dark-color: #253746;
 :root {
   --active-color: #{$active-color};
   --primary-color: #{$primary-color};
@@ -14,4 +15,5 @@ $success-color: #00A886;
   --white-color: #{$white-color};
   --danger-color: #{$danger-color};
   --success-color: #{$success-color};
+  --dark-color:#{$dark-color};
 }

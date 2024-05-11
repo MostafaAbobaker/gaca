@@ -5,11 +5,16 @@
   bottom: 0;
   inset-inline-start: -100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+
   z-index: 9999;
   padding: .5rem;
+  padding-bottom: 1rem;
   background-color: var(--bg-color);
   transition: all 0.3s ease-in;
   .navbar-brand {
+    padding-block: 1rem;
     margin-bottom: 1rem;
     display: block;
     .logo-small {
@@ -28,6 +33,7 @@
     }
   }
   .navbar-item-list {
+    flex-grow: 2;
     .transport-services {
       text-align: start;
       background-color: #F2F8FB;
@@ -52,6 +58,9 @@
         }
         .icon-extends {
           margin-inline-start: auto;
+          transition: all .3s  ease-in-out;
+
+
         }
       }
       .body {
@@ -71,7 +80,12 @@
 
       }
       &.show-services {
+        .header {
+          .icon-extends {
 
+            transform: rotate(180deg);
+          }
+        }
         .body {
           position: relative;
           transform: scaleY(1);
@@ -114,6 +128,70 @@
       }
     }
   }
+  .list-view-mobile {
+    display: block;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      li {
+        a {
+          text-align: start;
+          display: flex;
+          align-items: center;
+          color: var(--gray-color);
+          gap: 0.5rem;
+          padding: 0.5rem 1rem;
+          .text {
+            margin-top: -6px;
+            font-weight: 500;
+          }
+        }
+        .notifications {
+          padding: .5rem 1rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          .text {
+            margin: 0;
+          }
+          .badge {
+            margin-inline-start: auto;
+          }
+        }
+        .user  {
+          display: flex;
+          align-items: center;
+          min-width: auto;
+          border-radius: .5rem;
+          border: 1px solid #DDE8ED ;
+          gap: .5rem;
+          padding:  .5rem  1rem ;
+          .image {
+
+            img {
+              width: 2rem;
+              height: 2rem;
+              border-radius: .25rem;
+            }
+          }
+          .user-body {
+            text-align: start;
+            h5.title {
+              margin-bottom: 0;
+            }
+            p {
+              margin-bottom: 0;
+            }
+          }
+
+        }
+      }
+    }
+  }
 }
 .show-side-bar {
   .side-bar {
@@ -129,6 +207,8 @@
     .navbar-brand {
       display: flex;
       justify-content: center;
+      padding-block: 0;
+
       .logo-large {
         display: none;
       }
@@ -160,6 +240,75 @@
             }
           }
         }
+      }
+    }
+    .list-view-mobile {
+      display: none;
+    }
+  }
+  .show-side-bar {
+    .side-bar {
+      width: 16rem;
+      inset-inline-start: 0;
+      text-align: center;
+      .navbar-brand {
+        padding: 1rem;
+        display: block;
+        margin-bottom: 0;
+        .logo-large {
+          display: block;
+        }
+        .logo-small {
+          display: none;
+        }
+      }
+      .logo-action {
+        position: relative;
+        .icon-close {
+          display: none;
+        }
+      }
+      .navbar-item-list {
+        .transport-services{
+          display: block;
+        }
+        ul {
+          margin: 0;
+          padding: .5rem;
+          gap: 1rem;
+          li {
+            text-align: start;
+            a {
+              padding: .5rem 1rem;
+              border-radius: .25rem;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: .5rem;
+              font-size: .75rem;
+              font-weight: 500;
+              span.text {
+                display: block;
+              }
+              span.icon-moon {
+                font-size: 1.25rem;
+              }
+              &.active {
+                background-color: var(--active-color);
+                color: var(--white-color);
+                border-radius: 1rem;
+                span.icon-moon {
+                  &:before {
+                    color: var(--white-color);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .list-view-mobile {
+        display: none;
       }
     }
   }
@@ -205,7 +354,7 @@
               font-size: 1.25rem;
             }
             &.active {
-              background-color: #0075C9;
+              background-color: var(--active-color);
               color: var(--white-color);
               border-radius: 1rem;
               span.icon-moon {
@@ -216,6 +365,56 @@
             }
           }
         }
+      }
+    }
+    .list-view-mobile {
+      display: none;
+    }
+  }
+  .show-side-bar {
+    .side-bar  {
+      width: 5rem;
+      inset-inline-start: 0;
+      .navbar-brand {
+        display: flex;
+        justify-content: center;
+        padding-block: 0;
+
+        .logo-large {
+          display: none;
+        }
+        .logo-small {
+          display: block;
+        }
+      }
+      .logo-action {
+        position: relative;
+        .icon-close {
+          display: none;
+        }
+      }
+      .navbar-item-list {
+        .transport-services {
+          display: none;
+        }
+        ul {
+          margin-top: 1rem;
+          li {
+            a {
+              gap: 0;
+              justify-content: center;
+              span.icon-moon {
+                font-size: 1.5rem;
+              }
+              span.text {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .list-view-mobile {
+        display: none;
       }
     }
   }

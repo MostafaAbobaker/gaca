@@ -1,0 +1,12 @@
+.form-select {
+  padding: .375rem .75rem ;
+  inset-inline-start: 2.25rem;
+  background-position: left .75rem center;
+}
+label {
+  color: var(--gray-color);
+}
+input , .form-control , .form-select{
+  border-color: #DAE0E7;
+  border-radius: 0;
+}

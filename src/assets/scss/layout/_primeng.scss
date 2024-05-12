@@ -1,0 +1,44 @@
+.p-calendar .p-inputtext  {
+  width: 100%;
+  padding: .375rem .75rem;
+  background-color: var(--white-color);
+
+}
+.p-dropdown ,  .p-calendar  {
+  width: 100%;
+  padding: 0 .75rem;
+  border-radius: 0;
+  background-color: var(--white-color);
+}
+.p-inputtext {
+  padding: .375rem .75rem;
+  color: var(--dark-color);
+
+}
+.p-calendar .p-button {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0.375rem;
+  background-color: transparent;
+  border: none;
+  color: var(--gray-color);
+  padding: .375rem ;
+}
+
+.p-dropdown-items-wrapper {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+.p-dropdown-filter-container {
+  position: relative;
+  .p-icon-wrapper {
+    position: absolute;
+    top: 19px;
+    inset-inline-end: 38px;
+  }
+}
+.p-dropdown .p-dropdown-trigger {
+  width: 1rem;
+}

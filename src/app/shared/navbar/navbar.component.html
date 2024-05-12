@@ -8,6 +8,20 @@
       </div>
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
       <li class="nav-item ">
+        <a class="nav-link  " >
+          <ng-container *ngIf="darkMode; else darkTemplate">
+            <button class="nav-link " (click)="changeTheme('light')" type="button" id="theme-toggle">
+              <i class="fa-regular fa-sun"></i></button>
+
+          </ng-container>
+          <ng-template #darkTemplate>
+            <button class="nav-link " (click)="changeTheme('dark')" type="button" id="theme-toggle">
+              <i class="fa-regular fa-moon"></i></button>
+
+          </ng-template>
+          </a>
+          </li>
+      <li class="nav-item ">
         <a class="nav-link  notifications" >
           <span class="text">التنبيهات</span>
           <span class="icon ">

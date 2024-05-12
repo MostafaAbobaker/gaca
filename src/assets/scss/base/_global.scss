@@ -31,6 +31,10 @@ h6 {
 
 
 
+.dir-ltr {
+  direction: ltr;
+}
+
 
 
 a {
@@ -39,7 +43,38 @@ a {
   cursor: pointer;
 }
 
-
+.btn {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--dark-color);
+    opacity: .1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover {
+    box-shadow: 0 0 10px rgba($dark-color , 0.4);
+    &::before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+}
 
 // selection
 
@@ -50,27 +85,27 @@ a {
 
 // custom scrollbar
 
-* {
-  scrollbar-color: var(--primary-color-dark) var(--primary-color-x-light);
-  scrollbar-width: thin;
-}
+// * {
+//   scrollbar-color: var(--dark-blue-color) var(--active-color);
+//   scrollbar-width: thin;
+// }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--primary-color-x-light);
+  background-color: #ddd;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color-dark);
+  background-color: darken($primary-color, 5%);
   border-radius: 5px;
-  border: 0 solid var(--primary-color-x-light);
+  border: 0 solid var(--primary-color);
   background-clip: content-box;
 
   &:hover {
-    background-color: var(--primary-color-light);
+    background-color: var(--active-color);
   }
 }

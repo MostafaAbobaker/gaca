@@ -7,6 +7,9 @@ $gray-color: #7C7C7C;
 $danger-color: #EE3749;
 $success-color: #00A886;
 $dark-color: #253746;
+$warning-color: #F4B63C;
+$dark-blue-color: #152449;
+
 :root {
   --active-color: #{$active-color};
   --primary-color: #{$primary-color};
@@ -15,5 +18,12 @@ $dark-color: #253746;
   --white-color: #{$white-color};
   --danger-color: #{$danger-color};
   --success-color: #{$success-color};
+  --warning-color: #{$warning-color};
   --dark-color:#{$dark-color};
+  --dark-blue-color:#{$dark-blue-color};
+}
+[data-bs-theme="dark"]{
+  --bg-color: #151c2b;
+  --white-color: #303336;
+  --dark-color: #ddd;
 }

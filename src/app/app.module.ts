@@ -5,9 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
-import { CalendarModule } from 'primeng/calendar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from "./shared/shared.module";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -20,10 +20,10 @@ import { SharedModule } from "./shared/shared.module";
         AppRoutingModule,
         BrowserAnimationsModule,
         ButtonModule,
-        CalendarModule,
         ReactiveFormsModule,
         FormsModule,
-        SharedModule
+        SharedModule,
+        HttpClientModule
     ]
 })
 export class AppModule { }
